@@ -2,6 +2,8 @@
 
 % this package is just to generate text for demo-purposes
 \usepackage{blindtext}
+\usepackage{natbib}
+\bibpunct[; ]{(}{)}{,}{a}{}{;}
 
 
 \title{Title} % The title of your assignement; NB use \newlinetitle to start a newline
@@ -83,13 +85,14 @@
 \include{Introduksjon}
 \include{Teori}
 \include{Metode}
+\include{Intervju}
 \include{Resultater}
 \include{Diskusjon}
 \include{Konklusjon}
 
-\renewcommand*{\bibname}{References}
-\bibliographystyle{alpha}
-\bibliography{main}
+\renewcommand*{\bibname}{Referanser}
+\bibliographystyle{plainnat}
+\bibliography{ReferanseDatabase}
 
 %% Uncomment the following if you have any appendix
 % \appendix
