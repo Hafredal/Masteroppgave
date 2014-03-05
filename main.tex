@@ -5,6 +5,12 @@
 \usepackage{natbib}
 \bibpunct[; ]{(}{)}{,}{a}{}{;}
 
+\usepackage{tikz}
+\usepackage{adjustbox}
+\usetikzlibrary{shapes,snakes}
+\usepackage{amsmath,amssymb}
+\usepackage{sidecap}
+\usepackage{multirow}
 
 \title{Title} % The title of your assignement; NB use \newlinetitle to start a newline
 \author{Monika Hafredal \\ \newlinetitle Veronica Sund} % Your firstname and lastname
@@ -12,10 +18,10 @@
 \supervisor{Joakim Klemets, ITEM \& Katrien De Moor, ITEM}
 
 %% Uncomment the following in case you want subfigures; note that there will be a warning for the caption package
-% \let\subcaption\undefined
-% \let\subfloat\undefined
-% \usepackage[bf]{caption}
-% \usepackage{subcaption}
+ \let\subcaption\undefined
+ \let\subfloat\undefined
+ \usepackage[bf]{caption}
+ \usepackage{subcaption}
 
 \DeclareGraphicsExtensions{.pdf,.jpg}
 \graphicspath{{./figs/}}
@@ -24,7 +30,7 @@
 \makeglossaries
 
 \begin{document}
-\selectlanguage{english}
+\selectlanguage{norsk}
 \pagenumbering{roman}
 \pagestyle{plain}
 
@@ -85,6 +91,7 @@
 \include{introduksjon}
 \include{teori}
 \include{sosioteknisk}
+\include{fitt-rammeverket}
 \include{metode}
 \include{etnografi}
 \include{observasjon}
@@ -96,7 +103,7 @@
 
 \renewcommand*{\bibname}{Referanser}
 \bibliographystyle{plainnat}
-\bibliography{ReferanseDatabase}
+\bibliography{main}
 
 %% Uncomment the following if you have any appendix
 % \appendix
