@@ -306,12 +306,12 @@
       \frontpagefont
       {\noindent%
        \begin{tabular}{@{}ll}
-         Submission date:       & \dateITEM\@date \\
-         Responsible professor: & \@professor     \\
-         Supervisor:            & \@supervisor    \\
+        Innlevert:       & \dateITEM\@date \\
+        Ansvarlig professor: & \@professor     \\
+        Veiledere:            & \@supervisor    \\
        \end{tabular}\par
       }\vspace{.5cm}
-      {\noindent Norwegian University of Science and Technology\\Department of Telematics}
+      {\noindent Norges teknisk-naturvitenskapelige universitet\\Institutt for telematikk}
     }%
     \null
   \endgroup%
