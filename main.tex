@@ -12,6 +12,7 @@
 \usepackage{sidecap}
 \usepackage{multirow}
 
+
 \title{Title} % The title of your assignement; NB use \newlinetitle to start a newline
 \author{Monika Hafredal \\ \newlinetitle Veronica Sund} % Your firstname and lastname
 \professor{Lill Kristiansen, ITEM} % Affiliation = ITEM for instance
@@ -27,6 +28,7 @@
 \graphicspath{{./figs/}}
 
 \loadglsentries{glossary}
+%\usepackage[xindy][toc]{glossaries}
 \makeglossaries
 
 \begin{document}
@@ -75,10 +77,10 @@
 %\addcontentsline{toc}{chapter}{List of Algorithms}
 %\cleardoublepage
 
-%% include if relevant
-%\printglossary[title=List of Symbols, style=long]
-%\cleardoublepage
-%\glsaddall[]
+%include if relevant
+\printglossary[title=Ordforklaringer, style=long]
+\cleardoublepage
+\glsaddall[]
 
 %% include if relevant
 %\printglossary[title=List of Acronyms,type=\acronymtype] % prints just the list of acronyms
@@ -94,7 +96,6 @@
 \include{fitt-rammeverket}
 \include{motstand}
 \include{avbrudd}
-\include{CSCW_Fail}
 \include{metode}
 \include{etnografi}
 \include{observasjon}
@@ -123,5 +124,6 @@
 \include{appendix_informasjon_intervju}
 \include{appendix_intervjuguide_seksjonsledere}
 \include{appendix_intervjuguide_pleiere}
+\include{appendix_dagenssystem}
 
 \end{document} 
