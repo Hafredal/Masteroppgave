@@ -3,6 +3,8 @@
 
 Vi vil her forsøke å forstå hvilke faktorer som kan være årsak til forskjellene identifisert i kapittel \ref{chp:resultater}, gjennom å analysere disse i lys av teorien som er presentert i kapittel \ref{chp:teori}. 
 
+Litt om hvordan FITT kommer inn her - hvordan kapittelet er lagt opp og at det har vært vanskelig å dele, men vi har gjort vårt beste
+
 \noindent
 Tidligere arbeid foreslår i stor grad endringer i teknologi som løsning på utfordringene ved pasientsignalsystemet. Forskerne oppdaget imidlertid gjennom sine observasjoner at problemene ikke nødvendigvis ligger i selve teknologien, men i andre faktorer. 
 
@@ -11,6 +13,9 @@ Tidligere arbeid foreslår i stor grad endringer i teknologi som løsning på ut
 FORSKNINGSSPØRSMÅL
 
 \section{Tilpasning mellom teknologi og oppgave}	
+
+\subsubsection{Pleiemodell}	
+Tilpasningen mellom teknologi og oppgave vil avhenge av sykepleiernes pleiemodell, da denne kan sees på som en måte å organisere oppgaver på (jf. \ref{sec:pleie}). Pasientsignaler varsles først hos primæransvarlig for pasienten, noe som vitner om at systemet først og fremst er tilpasset primærsykepleiemodellen. Forskerne observerte derimot ingen tydelig pleiemodell hos de tre avdelingene. Dagskiftene bar preg av å være organisert etter en primærsykepleiemodell, mens på kvelds- og nattskift var oppgavene i større grad organisert etter en teamsykepleiemodell. Forskerne observerte også at pleierne ofte logget seg på systemet som disp, og ikke primær på kvelds- og nattskift. Dersom hensikten er at pleierne skal være pålogget med primæransvar for pasientene, kan det anses som en workaround at pleierne velger å gjøre noe annet som bedre passer deres arbeidspraksis. Det er dermed grunn til å anta at det er bedre tilpasning mellom teknologi og oppgaven på dagskift, enn på kvelds- og nattskift. 
 
 \subsubsection{Varsling under telefonsamtaler}
 Pleierne fortalte at IP-telefonen ofte brukes for å komme i direkte kontakt med andre pleiere. Dette gir en mer effektiv arbeidshverdag da de tidligere brukte mye tid på å lete etter hverandre. Pleierne anser telefonen i slike tilfeller som et nyttig verktøy, og har dermed akseptert og integrert den i sin arbeidshverdag (jf. \ref{sec:implementering}). Videre kan man si at teknologien har påvirket det sosiale systemet, da pleierne bruker mindre tid på å kommunisere ansikt-til-ansikt (jf. \ref{section:ista-rammeverket}). Det er derimot problematisk at pasientsignaler varsles i telefonsamtaler, da dette oppleves som svært forstyrrende. Dette skaper både frustrasjon hos pleierne og forsinker deres arbeid. Dette er i tråd med \citet{Grundgeiger09} som påpeker at avbrudd kan gi negative effekter. Det kan samtidig argumenteres for at denne varslingen har en positiv effekt da signalet oppfattes, og det ville vært en risiko dersom alle aktuelle pleiere snakket i telefonen uten å bli varslet. Systemet er designet slik at pasientsignal skal varsles uansett, og dette er dermed en tilsiktet funksjon. Dette medfører at pleiere i roller hvor de ringer mye enten velger å ikke motta pasientsignaler, går med to telefoner, eller bruker tuntelefonen for utgående samtaler. Dette er eksempler på workarounds, da pleierne finner løsninger på det de opplever som en sperre i systemet (jf. \ref{section:sosioteknisk}). Disse tilpasningene av teknologien kan i tråd med \citet{Coiera07} sees på som implisitte signaler på en svakhet i systemet, og kan tvinge frem en endring i teknologien (jf. \ref{sec:ista-rammeverket}). Det er planlagt en endring hvor pasientsignaler ikke varsles under telefonsamtaler, men heller sendes videre til neste mottaker. Dette er en form for avbruddshåndtering som forebygger avbrytelser ved å blokkere innkommende signaler \citep{Grandhi10}.
@@ -25,80 +30,63 @@ For avdeling A1 har varslingen på telefon vært et så stort problem at de ikke
 Data presentert av \citet{Rygh13} viser at pasientene ikke blir forstyrret av varslingen av pasientsignaler i like stor grad som pleierne tror, og at pasientene heller ikke opplever at pleierne forstyrres. Både \citet{Rygh13} og egne funn tyder derimot på at pasientene vegrer seg for å utløse signaler dersom de tror at pleierne har mye å gjøre, og at de dermed likevel påvirkes av varslingene.
 
 \subsubsection{Utforming av teknisk system}
-Til tross for at sykepleierne i stor grad samarbeider på tvers av sengetunene, er teknologien kun til en viss grad tilpasset dette, da utformingen av sløyfer ikke støtter slikt samarbeid fullstendig. Som forklart av IKT-rådgiver ved sykehuset er sløyfene forsøkt tilpasset sykepleiernes behov. Da det er ressurskrevende å gjøre endringer i sløyfene, har avdelingene måttet tilpasse seg etter disse. En signifikant forskjell på avdeling A1 og de to andre, er at pleiere på A1 ikke er avhengige av å bruke telefonen for å motta signaler fra andre tun, da hele avdelingen ligger på samme sløyfe og alle signaler varsles på veggpanelene. Avdelingene A2 og A3 er derimot, på grunn av sløyfenes utforming, nødt til å bruke telefonen. Det kan dermed argumenteres for at det faste systemet er for rigid i forhold til sykepleiernes arbeidspraksis. Og det er en klar sammenheng mellom sløyfenes utforming og sykepleiernes bruk av systemet.
+Å levere pasientsignaler gjennom to systemer, det faste og det trådløse, er eksempel på redundans av data (jf. \ref{sec:redundans}). Det kan dermed argumenteres for at det i tiden før signalene varsles på telefon ikke eksisterer slik redundans. Samtidig kan det likevel argumenteres for at det faste systemet i seg selv gir redundans av data, da varslingen skjer på flere veggpaneler. 
 
-\subsubsection{Forsinkelse i det trådløse systemet}
-Det er likevel tydelig at veggpanelene brukes oftere som kilde til informasjon om utløste pasientsignaler, enn telefonen. Det er hovedsakelig to årsaker til dette. For det første fører forsinkelsen i det trådløse systemet til at signalene først varsles på veggpanelene. Til tross for at \citep{Sletten09} hevder at denne forsinkelsen har minimal betydning for sengetunene, viser derimot egne funn at denne kan være kritisk, spesielt ved utløste stansalarmer. Det kan argumenteres for at det i tiden før signalene varsles på telefon ikke er redundans av data for den enkelte pleier, da signalet kun varsles på panel. Da pleierne gir uttrykk for at de har tilstrekkelig kunnskap om pasientene og det dermed oppstår redundans av funksjon, kan det likevel argumenteres for at redundansen av data er opprettholdt siden signalene varsles på flere paneler samtidig (jf. \ref{sec:redundans}). For avdeling A1 
+\noindent
+Til tross for at sykepleierne i stor grad samarbeider på tvers av sengetunene, er teknologien kun til en viss grad tilpasset dette, da utformingen av sløyfer ikke støtter slikt samarbeid fullstendig. Som forklart av IKT-rådgiver ved sykehuset er sløyfene forsøkt tilpasset sykepleiernes behov. Da det er ressurskrevende å gjøre endringer i sløyfene, har avdelingene måttet tilpasse seg etter disse. En signifikant forskjell på avdeling A1 og de to andre, er at pleiere på A1 ikke er avhengige av å bruke telefonen for å motta signaler fra andre tun, da hele avdelingen ligger på samme sløyfe og alle signaler varsles på veggpanelene. Avdelingene A2 og A3 er derimot, på grunn av sløyfenes utforming, nødt til å bruke telefonen for å opprettholde redundans av data. Det kan dermed argumenteres for at det faste systemet er for rigid i forhold til sykepleiernes arbeidspraksis. Og det er en klar sammenheng mellom sløyfenes utforming og sykepleiernes bruk av systemet.
 
-
- og fortsetter på telefonene etter at det er blitt avstilt. 
-
- Denne forsinkelsen skaper frustrasjon hos pleierne,
- 
- Flere pleiere ønsker seg større paneler, da det kan være vanskelig å lese hva som står på avstand
-
-- små paneler
-	- bak dør - interaksjon2
-- trykker seg ikke inn - sikkerhet ved stans
-- redundans av innsats
-- ulv ulv
-- panel i taket
-	- det de hadde før
-
-\subsubsection{Pleiemodell}	
-Tilpasningen mellom teknologi og oppgave vil avhenge av sykepleiernes pleiemodell, da denne kan sees på som en måte å organisere oppgaver på (jf. \ref{sec:pleie}). Pasientsignaler varsles først hos primæransvarlig for pasienten, noe som vitner om at systemet først og fremst er tilpasset primærsykepleiemodellen. Forskerne observerte derimot ingen tydelig pleiemodell hos de tre avdelingene. Dagskiftene bar preg av å være organisert etter en primærsykepleiemodell, mens på kvelds- og nattskift var oppgavene i større grad organisert etter en teamsykepleiemodell. Forskerne observerte også at pleierne ofte logget seg på systemet som disp, og ikke primær på kvelds- og nattskift. Dersom hensikten er at pleierne skal være pålogget med primæransvar for pasientene, kan det anses som en workaround at pleierne velger å gjøre noe annet som bedre passer deres arbeidspraksis. Det er dermed grunn til å anta at det er bedre tilpasning mellom teknologi og oppgaven på dagskift, enn på kvelds- og nattskift. 
-
-		
 \section{Tilpasning mellom teknologi og individ}
+
+\subsubsection{Veggpanel som foretrukket kilde til informasjon}
+Det er tydelig at veggpanelene brukes oftere enn telefonen som kilde til informasjon om utløste pasientsignaler. Det er hovedsakelig to årsaker til dette. For det første fører forsinkelsen i det trådløse systemet til at signalene først varsles på veggpanelene. Til tross for at \citep{Sletten09} hevder at denne forsinkelsen har minimal betydning for sengetunene, viser derimot egne funn at denne kan være kritisk, spesielt ved utløste hasteanrop. For det andre vil det ofte være enklere å se på panelene, og i noen tilfeller er det problematisk å ta telefonen opp av lommen. Dette medfører at pleierne i liten grad interagerer med telefonen, og heller ikke bruker funksjonen for å godta og avvise signaler. Dette gir mer støy som et resultat av at systemet ikke brukes slik det er tenkt.
+
+\noindent
+Flere pleiere ønsker seg større paneler da det fra avstand kan være vanskelig å lese hva som står. På avdeling A1 ønsker de også store paneler i taket. Dette antyder at teknologien ikke er tilpasset den fysiske settingen hvor den er tatt i bruk (jf. \ref{sec:ista-rammeverket}). Det er dermed overraskende at pleierne ikke bruker telefonene i større grad for å løse dette problemet, spesielt ved avdeling A1 hvor dette etterspørres av flere.
+
+\subsubsection{Assistanseknapp}
+Avdeling A1 er eneste avdeling med mulighet til å utløse assistansesignal, mens alternativet for de to andre avdelingene er å utløse et hasteanrop. I opplæringsdokumentene til sykehuset er hasteanropet beskrevet som et signal som kan utløses ved behov for assistanse. Det ble derimot avdekket en sterk felles oppfatning av at hasteanropet kun brukes ved nødsituasjoner. Sykepleierne uttrykte at de synes det er problematisk å utløse hasteanrop ved mindre alvorlige situasjoner, og det ble observert at pleierne ved A2 og A3 heller stikker hodet ut i gangen for å be om hjelp. Det har dermed oppstått en workaround fordi fortolkningen av systemet skiller seg fra tenkt bruk (jf. \ref{sec:implementering}, \ref{sec:ista-rammeverket}). Det er dermed tydelig at sykepleierne har behov for både et assistansesignal og et signal beregnet for nødsituasjoner.
+  
+\subsubsection{Støy}
+Varslingene av pasientsignaler medfører mye støy i pleiernes arbeidshverdag som videre skaper stress og frustrasjon. Dette kommer tydelig til syne ved at noen pleiere for eksempel taper over høyttaleren på telefonen for å dempe lyden. Også her er det forsøkt å tilpasse systemet for å svare sykepleiernes ønsker. Tidligere kunne lyden skrues av, men denne muligheten ble fjernet da det utgjorde en risiko for at signaler ikke ble oppfattet. I dag er det derimot flere pleiere som ønsker tilbake denne muligheten, samtidig som de ser positive effekter av å bli varslet. 
+
+\noindent
+Støyen er et hovedargument for hvorfor avdeling A1 ikke ønsker å benytte telefonen for mottak av pasientsignaler. Likevel uttrykker pleierne ved denne avdelingen at de ikke nødvendigvis vil ta den i bruk selv om det blir gjort endringer i lyden, da det likevel vil varsles like mange signaler. Observasjonene tyder på at signalene har en tendens til å ringe lenge på denne avdelingen, noe som vil ha en negativ innvirkning på støynivået. Pleierne på avdelingen har også en oppfattning av at de på andre avdelinger i stor grad bruker funksjonene for å godta og avvise signaler for å redusere støynivået, og argumenterer med at dette i mange situasjoner ikke er mulig for dem. Hun påpeker også at de har en pasientgruppe som utløser svært mange signaler. Obervasjonene avdekket imidlertid ikke tydelige forskjeller i antall pasientsignaler på de forskjellige avdeligene, og som tidligere nevnt lite bruk av funksjonene for å godta og avvise signaler.
+
+\noindent
+Forsinkelsen som fører til at varslingen fortsetter på telefonene etter at signalet er blitt avstilt er en annen årsak til støy, og fører iblant til redundans av innsats i tilfeller hvor flere pleiere går for å besvare samme signal. Dette fører i tillegg til unødvendig avbrytelse i arbeidet til de pleierne som blir overflødige. 
 
 \subsubsection{Motstand mot endring}
 	 infeksjon visste at det var en prøveperiode, kanskje ikke såå positive andre gangen.
 	 	- "alt var bedre før"
+	 	- grensesnitt
+	 	- - panel i taket
+		- det de hadde før
+		- masing om assistanse
+		- tvunget til endring
+
 	 	
-\subsubsection{Assistanseknapp}
-Et annet skille mellom avdelingene er at avdeling A1 har mulighet til å utløse assistansesignal ved behov for assistanse, mens alternativet for de to andre avdelingene er å utløse et hasteanrop. I opplæringsdokumentene til sykehuset er hasteanropet beskrevet som et signal som kan utløses ved behov for assistanse. Det ble derimot avdekket en sterk felles oppfatning av at hasteanropet kun brukes ved nødsituasjoner. Sykepleierne uttrykte at de synes det er problematisk å utløse hasteanrop ved mindre alvorlige situasjoner, og det ble observert at pleierne ved A2 og A3 heller stikker hodet ut i gangen for å be om hjelp. Det har dermed oppstått en workaround fordi fortolkningen av systemet skiller seg fra tenkt bruk (jf. \ref{sec:implementering}, {sec:ista-rammeverket}). Det er dermed tydelig at sykepleierne har behov for både et assistansesignal og et signal beregnet for nødsituasjoner.
-
-- masing om assistanse
-- ut ifra opplæringsmateriale så finnes den
-- men sykepleierne kalle det stans, og bruker den slik, slipper alt
-- kultur
-- to forskjellige behov, fra utviklernes side er behovet dekt
-- tvunget til endring
-
-  
-\subsubsection{Avbrytelser}
-- frustrasjon over å bli avbrutt
-	- stressende
-
-- infeksjon klager på lyd, men vil ikke bruke det uansett
-	- ser ikke nytten
-
-
-Forskerne observerte derimot ikke at signaler ble avvist på andre avdelinger heller.
-
-- kultur for å la det ringe lenge /interagerte lite med telefonene
-
-- frustrasjon over å bli avbrutt
-	- stressende
-
-- infeksjon klager på lyd, men vil ikke bruke det uansett
-	- ser ikke nytten
-	
 
 \subsubsection{Opplæring}	 	
 - opplæring 
 	- vet ikke det med stans
+	
+- kultur hasteanrop
+
+- opplæringsmateriale - ulike navn på samme ting, ganske forvirrende
 
 - ulike brukere
 	- ser tendens til felles verdier hos A1, noe mer varierende hos de andre
 
+\subsubsection{Tilstedemarkering}
+Bruk av veggpaneler og telefon for mottak av pasientsignaler er et eksempel på redundans av data, og gir en økt sikkerhet for at signaler oppfattes. Ved å ikke benytte telefonen mister avdeling A1 denne sikkerheten. Pleiere ved de to andre avdelingene fortalte at selv om de i utgangspunktet mottar signaler på telefonene, glemmer de iblant å logge seg på. Ved å ikke være pålogget telefonen for mottak av pasientsignaler forsvinner redundansen av data, og i tilfeller hvor pleierne i tillegg ikke tilstedemarkerer seg på pasientrommet vil de være helt isolert fra omgivelsene. Dette kan utgjøre en risiko for at pasienter ikke får hjelp når de trenger det. Selv om avdeling A1 er så avhengige av å tilstedemarkere seg på pasientrom, ble det ikke observert at de brukte denne funksjonen oftere. 
 
+- tilstrekkelig redundans at pleierne har redundans av funksjon/data
+	Pleiernes påstand om at de har tilstrekkelig kunnskap om pasientene til å besvare alle pasientsignaler, vitner om en redundans av funksjon. 
+- forstår de egentlig fordelen med sikkerhet
+	- vil ikke integrere
+	- motstand
 
 \section{Tilpasning mellom individ og oppgave}
-
-\subsubsection{Tilstedemarkering}
-Bruk av veggpaneler og telefon for mottak av pasientsignaler gir en redundans av data, og dermed også en sikkerhet for at signalene blir oppfattet. Ved å ikke benytte telefonen mister avdeling A1 denne sikkerheten. Pleiere ved de to andre avdelingene fortalte at selv om de i utgangspunktet mottar signaler på telefonene, glemmer de iblant å logge seg på. Ved å ikke være pålogget telefonen for mottak av pasientsignaler forsvinner redundansen av data, og i tilfeller hvor pleierne i tillegg ikke tilstedemarkerer seg på pasientrommet vil de være helt isolert fra omgivelsene. Dette kan utgjøre en risiko for at pasienter ikke får hjelp når de trenger det. Selv om avdeling A1 er så avhengige av å tilstedemarkere seg på pasientrom, ble det ikke observert at de brukte denne funksjonen oftere. 
-
 
 
 - redundans av funksjon
