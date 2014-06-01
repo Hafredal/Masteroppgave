@@ -1,12 +1,12 @@
 \chapter{Casebeskrivelse}
 \label{chp:case}
-Utbyggingen av det nye universitetssykehuset i Trondheim, St.Olavs Hospital ble påbegynt i 2003 og sto ferdig sommeren 2013. Byggingen ble hovedsakelig delt i to byggefaser, hvor avdelingene flyttet inn i sine nye lokaler etter hver fase. Som en del av byggeprosjektet inngikk også det som da var Norges største, dyreste og mest kompliserte IKT-leveranse noensinne \citep{TU}. Pasientsignalsystemet var en del av denne leveransen, og ble utviklet spesielt for sykehuset. 
+Utbyggingen av det nye universitetssykehuset i Trondheim, St.Olavs Hospital, ble påbegynt i 2003 og sto ferdig sommeren 2013. Byggingen ble hovedsakelig delt i to byggefaser, hvor avdelingene flyttet inn i sine nye lokaler etter hver fase. Som en del av byggeprosjektet inngikk også det som da var Norges største, dyreste og mest kompliserte IKT-leveranse noensinne \citep{TU}. Pasientsignalsystemet var en del av denne leveransen. 
 
 \noindent
 Denne casebeskrivelsen omfatter en beskrivelse av de tre avdelingene, A1, A2 og A3, som har vært fokus for forskningsarbeidet. 
 
 \noindent
-Med det nye sykehuset ble utformingen av avdelingene endret. Avdelingene er nå delt i sengetun, hvor hvert sengetun normalt har seks til åtte pasientrom. Dette er en fysisk og funksjonell måte å organisere pasientrommene på, og for å sikre fleksibilitet og effektivitet ligger flere sengetun ved en sengepost etter hverandre i serie, som vist i figur \ref{fig:Bevegelse} og \ref{fig:AHL} \citep{Aslaksen, sykehuskart}. Sengetunene består av en arbeidsstasjon, nærlager, sengerom og toalett. Mellom tunene ligger støtterom som kjøkken og oppholdsrom for pasienter, medisinrom, skylle/avfallsrom og undersøkelsesrom. Et overordnet mål for en slik organisering er å redusere barrierer mellom pleier og pasient, bedre muligheter for overvåking av pasienter og redusere risiko for uønskede hendelser, noe som øker sikkerheten for pasientene \citep{Sintef-sengetun}.
+Med det nye sykehuset ble utformingen av avdelingene endret. Avdelingene er nå delt i sengetun, hvor hvert sengetun normalt har seks til åtte pasientrom. Dette er en fysisk og funksjonell måte å organisere pasientrommene på, og for å sikre fleksibilitet og effektivitet ligger flere sengetun ved en sengepost etter hverandre i serie, som vist i figur \ref{Plantegninger} \citep{Aslaksen, sykehuskart}. Sengetunene består av en arbeidsstasjon, nærlager, sengerom og toalett. Mellom tunene ligger støtterom som kjøkken og oppholdsrom for pasienter, medisinrom, skylle/avfallsrom og undersøkelsesrom. Et overordnet mål for en slik organisering er å redusere barrierer mellom pleier og pasient, bedre muligheter for overvåking av pasienter og redusere risiko for uønskede hendelser, noe som øker sikkerheten for pasientene \citep{Sintef-sengetun}.
 
 \noindent
 Avdeling A1 består av tre tun à seks sengerom, hvorav avdelingen har to luftsmitteisolat og seks kontaktsmitteisolat. Avdeling A2 består av tre tun à åtte sengerom. Avdeling A3 består av fire tun à åtte sengerom, fordelt på to etasjer.
@@ -73,7 +73,7 @@ Pasientsignalsystemet består av et fast og et trådløst system. Det faste syst
 \end{figure}
 
 \noindent
-Hver arbeidsstasjon har en PC som kjører pasientsignalapplikasjonen, og gjennom denne kan sykepleierne registrere seg i en bemanningsplan (figur \ref{IMATISbemanningsplan}) og får oversikt over hvilke rom som er tilstedemarkert eller har pågående pasientsignaler og hasteanrop (figur \ref{IMATISpasientapplikasjon}). Applikasjonen gir pleierne mulighet til å selv påvirke hvordan pasientsignalene skal distribueres. Pleiere har mulighet til å registrere seg som primær og/eller disponibel på pasientrom og som disponibel på hele sitt eget eller andre tun. Det faste systemet er konfigurert i fysiske, kablede sløyfer som kobler sammen sengetun og gjør det mulig å motta varslinger fra andre tun på veggpanelene. I tilfeller hvor man ønsker å motta signaler fra tun som er koblet til andre sløyfer må pleierne motta disse på sin telefon, da dette kan konfigureres gjennom bemanningsplanen. Et utløst pasientsignal vil først varsles på telefon til den pleieren som er registrert som primær på det aktuelle rommet. Dersom signalet ikke blir godtatt vil det gå videre til disponible pleiere. Signalet vil fortsette i denne løkken til det blir besvart.
+Hver arbeidsstasjon har en PC som kjører pasientsignalapplikasjonen, og gjennom denne kan sykepleierne registrere seg i en bemanningsplan (figur \ref{IMATISbemanningsplan}) og får oversikt over hvilke rom som er tilstedemarkert eller har pågående pasientsignaler og hasteanrop (figur \ref{IMATISpasientapplikasjon}). Bemanningsplanen gir pleierne mulighet til å selv påvirke hvordan pasientsignalene skal distribueres. Pleiere har mulighet til å registrere seg som primær og/eller disponibel på pasientrom og som disponibel på hele sitt eget eller andre tun. Det faste systemet er konfigurert i fysiske, kablede sløyfer som kobler sammen sengetun og gjør det mulig å motta varslinger fra andre tun på veggpanelene. I tilfeller hvor man ønsker å motta signaler fra tun som er koblet til andre sløyfer må pleierne motta disse på sin telefon, da dette kan konfigureres gjennom bemanningsplanen. Et utløst pasientsignal vil først varsles på telefon til den pleieren som er registrert som primær på det aktuelle rommet. Dersom signalet ikke blir godtatt vil det gå videre til disponible pleiere. Signalet vil fortsette i denne løkken til det blir besvart.
 
 \begin{figure}[H]
 \centering
@@ -126,7 +126,7 @@ Pleiere kan utløse hasteanrop i tilfeller hvor de har behov for assistanse. Der
 Der de samme signalene varsles på veggpanelene og på telefon fører en forsinkelse i det trådløse systemet til at signalet varsles tidligere på veggpanelene. Det foreligger desverre ingen tall på hvor stor forsinkelsen er. 
 
 \noindent
-Systemet skiller seg fra det som ble brukt tidligere, blant annet i at pasientsignal da kun ble varslet på paneler på vegg og på større paneler i taket (se figur \ref{takpanel}). Også knappen sykepleierne kunne bruke for å formidle behov for assistanse ble fjernet (figur \ref{assistanseknapp}). 
+Systemet skiller seg fra det som ble brukt tidligere, blant annet i at pasientsignal da kun ble varslet på paneler på vegg og på større paneler i taket (se figur \ref{takpanel}). Også knappen sykepleierne brukte for å formidle behov for assistanse ble fjernet (figur \ref{assistanseknapp_gammel}). 
 
 \begin{figure}[H]
         \centering
@@ -141,7 +141,7 @@ Systemet skiller seg fra det som ble brukt tidligere, blant annet i at pasientsi
         		\centering
                 \includegraphics[scale=0.08]{assistanseknapp.jpg}
                 \caption{Rompanel med egen knapp for assistansesignal}
-                \label{assistanseknapp}
+                \label{assistanseknapp_gammel}
         \end{subfigure}
         \caption{Features ved det gamle sykehuset}
         \label{takass}
@@ -149,9 +149,17 @@ Systemet skiller seg fra det som ble brukt tidligere, blant annet i at pasientsi
 
 
 \noindent
-I forkant av innflyttingen fikk de ansatte opplæring, blant annet i hvordan det nye pasientsignalsystemet fungerte. Noen ansatte fikk mer omfattende opplæring og ble $"$superbrukere$"$ av systemet, med den hensikt å fungere som ambassadører for systemet, og hjelpe til med opplæring på avdelingene. Den første tiden etter at systemet var tatt i bruk var det også plassert $"$on site help desk$"$ på alle avdelinger for å svare på spørsmål og hjelpe til med bruk. I dag er det den enkelte avdeling som har ansvar for opplæring av sine nyansatte. 
+I forkant av innflyttingen fikk de ansatte opplæring i hvordan det nye pasientsignalsystemet fungerte. Noen fikk mer omfattende opplæring og ble $"$superbrukere$"$, med den hensikt å fungere som ambassadører for systemet og hjelpe til med opplæring på avdelingene. Den første tiden etter at systemet var tatt i bruk var det også plassert $"$on site help desk$"$ på alle avdelinger for å svare på spørsmål og hjelpe til med bruk. I dag er det den enkelte avdeling som har ansvar for opplæring av sine nyansatte. 
 
 \noindent
 Ved innflyttingen i nytt sykehus var det meningen at alle skulle bruke telefonen til å motta pasientsignaler. Det var derimot noen avdelinger, deriblant avdeling A1, som viste sterk motstand og ikke ønsket å bruke telefonene til dette.
-Høsten 2013 flyttet avdelingen på nytt inn i nye lokaler, og gikk i forbindelse med dette med på å bruke systemet slik det var tiltenkt i en prøveperiode på 14 dager. Etter denne prøveperioden gikk avdelingen likevel tilbake til å ikke motta pasientsignaler på telefon. 
-I forbindelse med denne flyttingen fikk de også tilbake assistanseknappen (figur \ref{assistanseknapp}) de lenge hadde ønsket seg. Denne er plassert sammen med den grønne og røde knappen på panelet inne på pasientrommet. Disse signalene varsles med et annet signal enn vanlige pasientsignal og vises kun på veggpanelene og ikke i pasientapplikasjonen på IMATIS-skjermen.
+Høsten 2013 flyttet avdelingen på nytt inn i nye lokaler, og gikk i forbindelse med dette med på å bruke systemet slik det var tiltenkt i en prøveperiode på 14 dager. Etter denne prøveperioden gikk avdelingen likevel tilbake til å ikke motta pasientsignaler på telefon. I forbindelse med denne flyttingen fikk de også tilbake assistanseknappen (figur \ref{assistanseknapp_ny}) de lenge hadde ønsket seg. Denne er plassert på et eget panel over rompanelet inne på pasientrommet. Disse signalene varsles kun i det faste systemet og har en egen varslingslyd.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.08]{assistanseknapp.jpg}
+\caption{Panel med egen knapp for assistansesignal}
+\label{assistanseknapp_ny}
+\end{figure}
+
+
